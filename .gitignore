@@ -219,8 +219,8 @@ __marimo__/
 
 # Custom
 .env.example
-replacer_conf.json
-templates_list.json
+conf/replacer_conf.json
+conf/templates_list.json
 target/
 parsed/
 templates/
