@@ -1,0 +1,76 @@
+{
+  "configuration": [
+    {
+      "op_type": {
+        "description": "Type of operation to execute (can be overridden by the GUI configuration)",
+        "enabled": true,
+        "value": 1,
+        "menu": false
+      },
+      "delete_input_file": {
+        "description": "Delete the input file after processing",
+        "enabled": true,
+        "value": false,
+        "menu": true
+      },
+      "show_gui_config": {
+        "description": "Disable the checkbox-based GUI configuration",
+        "enabled": true,
+        "value": false,
+        "menu": false
+      },
+      "verbose": {
+        "description": "Show detailed logs",
+        "enabled": true,
+        "value": true,
+        "menu": true
+      },
+      "get_file_by_first_entry": {
+        "description": "Use only the first file found in the folder",
+        "enabled": true,
+        "value": true,
+        "menu": true
+      },
+      "overwrite_confs": {
+        "description": "Overwrite the original configuration file with the current one in use",
+        "enabled": true,
+        "value": false,
+        "menu": true
+      },
+      "open_file": {
+        "description": "Automatically open the file when the operation finishes",
+        "enabled": true,
+        "value": false,
+        "menu": true
+      },
+      "copy_to_clipboard": {
+        "description": "Copy the processed file content to the clipboard",
+        "enabled": true,
+        "value": true,
+        "menu": true
+      },
+      "use_template_folder": {
+        "description": "BETA - Load templates from the 'templates' folder instead of 'target'",
+        "enabled": true,
+        "value": false,
+        "menu": false
+      },
+      "template_json_name": {
+        "description": "Identifier of the variable list to load for replacements (from 'templates_list.json')",
+        "enabled": true,
+        "value": "azioni"
+      },
+      "template_file_name": {
+        "description": "BETA - Name of the template file inside the 'templates' folder. Used only if the 'use_template_folder' option is enabled",
+        "enabled": false,
+        "value": "tabConModal"
+      },
+      "entire_file": {
+        "description": "BETA - Replace the entire file instead of line by line (does not work properly, keep set to False)",
+        "enabled": true,
+        "value": false,
+        "menu": false
+      }
+    }
+  ]
+}

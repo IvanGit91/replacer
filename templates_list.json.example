@@ -1,0 +1,41 @@
+{
+	"equals": [
+		{	
+			"\\!super\\.equals\\(obj\\)": "obj == null",
+			"other\\.([a-z])(.*?) !=": "other.get$1$2() !=",
+            "equals\\(other\\.([a-z])(.*?)\\)": "equals(other.get$1$2())",
+            "getClass\\(\\) != obj.getClass\\(\\)": "!getClass().isInstance(obj)"
+		}
+    ],
+	"getter-setter": [
+		{				
+		   	"Crm(\\w)": "$1",
+           	"crm(\\w)": "\\L$1",
+           	", catalog = r\"form_retail\"": "",
+           	"// default package": "package com.formretailplatform.model;",
+           	"// Generated.*": "",
+           	"/\\*\\*": "",
+           	" \\*.*": "",
+           	" \\*/": "",
+           	"get([A-Z])": "get$1",
+           	"set([A-Z])": "set$1",
+           	"(.*name.*?=.*?\")(.*?)(\".*)": "$1\\L$2$3",
+           	"^.*private String uc;$": "\n    @Column(name=\"uc\")\n    @NotEmpty(message = NOTNULL)\n    private String uc;",
+           	"^.*private Date dc;$": "\n    @Column(name=\"dc\", columnDefinition=\"DATETIME\")\n    @NotNull(message = NOTNULL)\n    @Temporal(TemporalType.TIMESTAMP)private Date dc;",
+           	"^.*private String um;$": "\n    @Column(name=\"um\")\n    private String um;",
+           	"^.*private Date dm;$": "\n    @Column(name=\"dm\", columnDefinition=\"DATETIME\")\n    @Temporal(TemporalType.TIMESTAMP)private Date dm;",
+           	"^.*private char fv;$": "\n    @Column(name=\"fv\")\n    @NotNull(message = NOTNULL)\n    private char fv;",
+           	"@Column\\(name = \"uc\", nullable = false, length = 50\\)": "",
+           	"@Temporal\\(TemporalType.TIMESTAMP\\)": "",
+           	"@Column\\(name = \"dc\", nullable = false, length = 19\\)": "",
+           	"@Column\\(name = \"um\", length = 50\\)": "",
+           	"@Column\\(name = \"dm\", length = 19\\)": "",
+           	"@Column\\(name = \"fv\", nullable = false, length = 1\\)": "",
+           	"implements java.io.Serializable": "extends AbstractModel implements Serializable",
+           	"import javax.persistence.Column;": "import javax.persistence.Column;\nimport java.io.Serializable;",
+           	"char": "Character",
+           	"@Entity": "import javax.validation.constraints.NotEmpty;\nimport javax.validation.constraints.NotNull;\n@Entity",
+           	"\\s\n\\s\n": "\n"
+		}
+    ]
+}
